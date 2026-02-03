@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASAD2204 - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="page-common.css">
+  <link rel="stylesheet" href="enhanced-effects.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">Muhammad<span class="logo-accent">Asad</span></a>
+        
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="academics.html" class="nav-link">Academics</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="honors.html" class="nav-link">Honors</a>
+          <a href="hobbies.html" class="nav-link">Hobbies</a>
+          <a href="volunteer.html" class="nav-link">Volunteer</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">👋</span>
+            <span>Welcome to my portfolio</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Muhammad Asad</span><br>
+            <span class="typewriter" id="typewriter"></span>
+          </h1>
+          
+          <p class="hero-description">
+            Software Developer and AI Engineer with expertise in Full Stack Web Development and 
+            AI systems. Specializing in building scalable, data-driven applications using Python, 
+            Node.js, and robust SQL/NoSQL architectures. Currently engineering Agentic AI systems 
+            and developing intelligent solutions with RAG-based architectures.
+          </p>
+
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary ripple magnetic glow">
+              <span>View My Work</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary ripple magnetic">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/ASAD2204" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-asad-7a708a2a0" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="mailto:asadrafaqat2021@gmail.com" class="social-link" aria-label="Email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-container">
+            <div class="image-decoration"></div>
+            <div class="image-placeholder">
+              <img src="myPhoto.png" alt="Muhammad Asad" class="hero-photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Work With Me Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Work With Me</h2>
+        <p class="section-subtitle">What makes me stand out as a developer</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">🚀</div>
+          <h3>Fast Learner & Problem Solver</h3>
+          <p>Quickly adapt to new technologies and frameworks. Proven track record of learning cutting-edge AI technologies and implementing them in real-world projects within tight deadlines.</p>
+        </div>
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">🎯</div>
+          <h3>Quality-Focused Development</h3>
+          <p>Writing clean, maintainable, and well-documented code is my priority. I follow best practices, design patterns, and ensure robust error handling in every project.</p>
+        </div>
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">🤝</div>
+          <h3>Team Player & Communicator</h3>
+          <p>Experienced in leading teams as Class Representative and Computer Society Organizer. Clear communication and collaborative problem-solving are my strengths.</p>
+        </div>
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">💡</div>
+          <h3>Innovation & Creativity</h3>
+          <p>Constantly exploring new approaches to solve problems. From building AI agents to implementing microservices architecture, I bring creative solutions to complex challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A quick glimpse into my journey</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">💻</div>
+          <h3>Full-Stack Developer</h3>
+          <p>Experienced in building scalable, data-driven web applications using Python, Node.js, and robust SQL/NoSQL architectures. Specialized in managing complex data structures using MySQL, MSSQL, and MongoDB. Proficient in Linux server environments and command-line operations for efficient backend development.</p>
+        </div>
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">🤖</div>
+          <h3>AI Engineer</h3>
+          <p>Currently engineering Agentic AI systems with cutting-edge technology. Recently developed an intelligent E-commerce Webstore featuring RAG-based architecture and Gemini API integration for autonomous customer support. Expertise in building AI solutions with advanced NLP techniques, semantic search, and conversational interfaces.</p>
+        </div>
+        <div class="about-card glass-card enhanced-card glow reveal">
+          <div class="card-icon">👨‍🏫</div>
+          <h3>Community Leader & Educator</h3>
+          <p>Core Organizer at University Computer Society, managing major technical events like IT Night and coding competitions. Currently serving as Teaching Assistant for Computer Organization & Assembly Language, mentoring students in low-level system architecture. Class Representative from 2nd to 8th semester.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <a href="projects.html" class="section-link">
+          View All Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="featured-grid">
+        <a href="https://github.com/ASAD2204/PROJECT_NEXUS" target="_blank" class="featured-card glass-card enhanced-card glow neon-border reveal">
+          <div class="featured-badge">Final Year Project</div>
+          <div class="featured-icon">🎓</div>
+          <h3>Project Nexus</h3>
+          <p>AI-powered university management ecosystem with microservices architecture, Kafka event streaming, hybrid AI (CAG + RAG), and biometric attendance with spoof detection.</p>
+          <div class="featured-tech">
+            <span>AI/ML</span>
+            <span>Microservices</span>
+            <span>Full-Stack</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ASAD2204/NetMon-AI" target="_blank" class="featured-card glass-card enhanced-card glow neon-border reveal">
+          <div class="featured-badge">Featured</div>
+          <div class="featured-icon">🤖</div>
+          <h3>NetMon-AI</h3>
+          <p>Intelligent system administration platform with conversational AI shell, real-time TUI dashboards, and Human-in-the-Loop security protocol.</p>
+          <div class="featured-tech">
+            <span>AI</span>
+            <span>System Admin</span>
+            <span>Security</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ASAD2204/Face_Attendance_System" target="_blank" class="featured-card glass-card enhanced-card glow neon-border reveal">
+          <div class="featured-badge">Production Ready</div>
+          <div class="featured-icon">👁️</div>
+          <h3>VisionPass</h3>
+          <p>Face attendance system with Triple-Layer Security (Geo-Fencing + Liveness + Recognition), 99.8% spoofing prevention, and voice/blink verification.</p>
+          <div class="featured-tech">
+            <span>Computer Vision</span>
+            <span>Security</span>
+            <span>Biometric</span>
+          </div>
+        </a>
+        
+        <a href="https://github.com/ASAD2204/webstore-ai-ecommerce" target="_blank" class="featured-card glass-card enhanced-card glow neon-border reveal">
+          <div class="featured-badge">Featured</div>
+          <div class="featured-icon">🛍️</div>
+          <h3>G&G SmartStore</h3>
+          <p>AI-driven e-commerce platform with a Gemini-powered chatbot, voice input, semantic search, personalized recommendations, order tracking, and admin analytics.</p>
+          <div class="featured-tech">
+            <span>E-commerce</span>
+            <span>AI</span>
+            <span>Full-Stack</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly chat</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:asadrafaqat2021@gmail.com">asadrafaqat2021@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Gujranwala, Punjab, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Social</h4>
+              <p>Connect with me on social platforms</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary ripple magnetic glow">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Muhammad<span class="logo-accent">Asad</span></h3>
+          <p>Software Developer & AI Engineer</p>
+          <div class="footer-social">
+            <a href="https://github.com/ASAD2204" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-asad-7a708a2a0" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="academics.html">Academics</a>
+            <a href="experience.html">Experience</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>More</h4>
+          <div class="footer-links">
+            <a href="honors.html">Honors</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muhammad Asad. All rights reserved.</p>
+        <p>Built with 💙 using HTML, CSS & JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
