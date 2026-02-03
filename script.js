@@ -1,7 +1,64 @@
 // ===========================
-// SPLASH SCREEN (DISABLED)
+// ENHANCED SPLASH SCREEN
 // ===========================
-// Splash screen removed per user request
+window.addEventListener('DOMContentLoaded', () => {
+  const splash = document.getElementById('splash');
+  const loaderBar = document.querySelector('.loader-bar');
+  const loadingText = document.querySelector('.splash-loading-text');
+  const statusText = document.querySelector('.splash-status');
+  const particlesContainer = document.getElementById('splashParticles');
+  
+  if (!splash) return;
+  
+  // Generate subtle glass particles
+  if (particlesContainer) {
+    for (let i = 0; i < 20; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 5 + 's';
+      particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+      particlesContainer.appendChild(particle);
+    }
+  }
+  
+  let progress = 0;
+  const messages = [
+    'Initializing...',
+    'Loading assets...',
+    'Preparing interface...',
+    'Almost ready...'
+  ];
+  
+  const interval = setInterval(() => {
+    progress += Math.random() * 15 + 10;
+    
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(interval);
+      
+      if (loadingText) loadingText.textContent = '100%';
+      if (statusText) statusText.textContent = 'Ready!';
+      if (loaderBar) loaderBar.style.width = '100%';
+      
+      setTimeout(() => {
+        splash.classList.add('fade-out');
+        setTimeout(() => {
+          splash.style.display = 'none';
+        }, 800);
+      }, 500);
+    } else {
+      const rounded = Math.floor(progress);
+      if (loadingText) loadingText.textContent = rounded + '%';
+      if (loaderBar) loaderBar.style.width = rounded + '%';
+      
+      const messageIndex = Math.floor((progress / 100) * messages.length);
+      if (statusText && messages[messageIndex]) {
+        statusText.textContent = messages[messageIndex];
+      }
+    }
+  }, 150);
+});
 
 // ===========================
 // THEME TOGGLE
