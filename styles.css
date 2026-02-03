@@ -1989,7 +1989,8 @@ section {
     gap: 8px;
     font-size: 0.85rem;
   }
-}
+
+  .splash-loader {
     width: 240px;
   }
 
